@@ -47,19 +47,19 @@ p1
 ```
 
 
-Bar plot showing the github usernames as well as the users favourite colour and number
+Bar plot showing the github usernames as well as the user's favourite colour and number
 
 ### Exercises 19
 
 Change the text of the plot title and axis labels.
 
 ```{r labelled-bar-plot}
-p1 + labs(x = "Insert text here", 
-          y = "Insert text here",
-          title = "Insert text here")
+p1 + labs(x = "github username", 
+          y = "Favourite number",
+          title = "Bar plot about group members")
 ```
 
-*Remove this text (including the stars), and add your answer for Exercise 19 here.*
+labs() adds the labels to the bar plot
 
 ### Exercise 20
 
@@ -68,5 +68,5 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
   geom_bar()
 p2
 ```
+If this plot was used for the whole course, it's likely that it will be lost of very small values. Perhaps grouping the hobbies into broader categories such as "sports", "arts", etc and then using a stacked bar chart will provide a nicer representation.
 
-*Remove this text (including the stars) and add your answer for Exercise 20 here.*
